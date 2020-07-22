@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 REMOTE_TOKEN_URL="https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 if ! git remote | grep "origin" > /dev/null 2>&1
